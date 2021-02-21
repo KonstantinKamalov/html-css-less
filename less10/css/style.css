@@ -1,0 +1,73 @@
+:root {
+    /* переменные кнопок */
+    --main-text-color: #18191f;
+    --primary-button-bgcolor: #8c30f5;
+    /* переменные для размеров шрифта */
+    --base-font: normal 14px "Manrope-Regular", sans-serif;
+    --heading-font: normal 40px "Manrope-ExtraBold", sans-serif;
+    /* базовые величины внешних и внутренних отступов*/
+    --base-gap-s: 8px;
+    --base-gap-m: 16px;
+    --base-gap-l: 32px;
+}
+
+body {
+    font: var(--base-font);
+    color: var(--main-text-color);
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1062px;
+    background-color: brown;
+}
+
+.headline-img {
+    display: inline-block;
+    width: 540px;
+    height: 710px;
+    background-color: azure;
+    vertical-align: middle;
+}
+
+/* внешний нижний отступ 1 блока с картинками */
+.headline-img__block:nth-child(1) {
+    margin-bottom: calc(var(--base-gap-m) + 4px);
+}
+
+/* обнуляю инлайновые отступы для всех картинок */
+.headline-img__block :nth-child(2n+1) {
+    margin-right: -4px;
+}
+
+.headline-img__block :nth-child(2n) {
+    margin-left: calc(var(--base-gap-m) + 4px);
+}
+
+/* вертикальное выравнивание 1 и 2 картинок */
+.headline-img :nth-child(1) img {
+    vertical-align: bottom;
+}
+
+/* вертикальное выравнивание 3 и 4 картинок */
+.headline-img :nth-child(2) img {
+    vertical-align: top;
+}
+
+.headline-description {
+    display: inline-block;
+    max-width: 444px;
+    vertical-align: middle;
+    margin-left: 74px;
+}
+
+.headline-description__title {
+    font: var(--heading-font);
+}
+
+.headline-description__subtitle {
+    font: var(--base-font);
+}
+
+/*сделать медиа запросы*/
