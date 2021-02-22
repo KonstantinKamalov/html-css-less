@@ -1,0 +1,63 @@
+:root {
+    --secondary-text-color: #ffffff;
+    --main-text-color: #18191f;
+    --primary-button-bgcolor: #8c30f5;
+    --primary-button-bgcolor-hover: #7715e7;
+    --primary-button-bgcolor-focus: #540ea5;
+    --border-radius: 8px;
+
+    /* переменные для размеров шрифта */
+    --base-font: normal14px"Manrope-Regular", sans-serif;
+    --heading-font: normal40px"Manrope-ExtraBold", sans-serif;
+
+    /* базовые величины внешних и внутренних отступов*/
+    --base-gap-s: 8px;
+    --base-gap-m: 16px;
+    --base-gap-l: 32px;
+}
+
+body {
+    font: var(--base-font);
+    color: var(--main-text-color);
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+
+/*
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+*/
+
+
+/*
+.discover-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+*/
+
+.discover-wrapper__item {
+    background-color: burlywood;
+    box-sizing: border-box;
+    width: 255px;
+    height: 200px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 64px;
+}
+
+.discover-wrapper__item img {
+    width: 32px;
+}
