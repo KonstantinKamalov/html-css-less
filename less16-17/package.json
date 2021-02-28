@@ -1,0 +1,17 @@
+{
+  "name": "less16-17",
+  "version": "1.0.0",
+  "description": "занятие 16-17",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kosty",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^4.0.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.14"
+  }
+}
