@@ -1,0 +1,13 @@
+@charset "UTF-8";
+/*правило вложения*/
+body {
+  font: 14px 600 "Manrope", sans-serif;
+  color: #333;
+}
+
+h1 {
+  background-color: red;
+  color: blue;
+  font-weight: 800;
+  font-size: 14px;
+}
