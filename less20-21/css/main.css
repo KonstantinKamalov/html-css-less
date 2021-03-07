@@ -17,7 +17,6 @@ p {
 .container {
   max-width: 1277px;
   margin: 0 auto;
-  background-color: brown;
 }
 
 .registration-wrapper {
@@ -119,12 +118,9 @@ p {
 }
 
 .registration-forms__block {
-  background-color: aquamarine;
-  padding-top: 74px;
-  padding-bottom: 0;
+  padding: 74px 87px 0 71px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  max-width: 426px;
 }
 
 .registration-forms__title {
@@ -252,11 +248,69 @@ p {
   background-color: #e9ecef;
 }
 
-.registration-forms__form button {
-  background-color: #1565d8;
+.registration-forms__form .button-blue, .registration-forms__form .button-white {
   border-radius: 6px;
   border: 0;
   margin-bottom: 16px;
   padding: 23px 0;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  font-family: "Inter", sans-serif;
+}
+
+.registration-forms__form .button-blue {
+  background-color: #1565d8;
   color: #fff;
+}
+
+.registration-forms__form .button-white {
+  background-color: #fff;
+  color: #000;
+  -webkit-box-shadow: 0px 4px 10px black;
+          box-shadow: 0px 4px 10px black;
+}
+
+.registration-forms__form img {
+  position: absolute;
+  left: 48px;
+}
+
+.registration-forms__form span {
+  text-align: center;
+  padding: 25px 0;
+  font-size: 12px;
+  color: #bababa;
+  position: relative;
+}
+
+.registration-forms__form span span::before, .registration-forms__form span span::after {
+  display: block;
+  content: "";
+  width: 172px;
+  height: 1px;
+  background-color: red;
+  position: absolute;
+  margin-top: -0.5px;
+}
+
+.registration-forms__form span::before {
+  left: 0;
+  top: 50%;
+}
+
+.registration-forms__form hr {
+  width: 100%;
+  border-color: #f5f5f5;
 }
