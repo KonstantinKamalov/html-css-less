@@ -1,0 +1,50 @@
+@import "_fonts";
+
+* {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	box-sizing: border-box;
+	font: "GothamPro-Medium", sans-serif;
+	font-size: 12px;
+	background-color: #e5e5e5;
+	color: #181818;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+}
+
+p {
+	font-size: 14px;
+}
+
+.col {
+	img {
+		padding: 20px 0;
+	}
+}
+
+.nav-item {
+	.nav-link {
+		position: relative;
+		padding: 52px 20px 17px 20px;
+		text-transform: uppercase;
+	}
+
+	img {
+		position: absolute;
+		top: 21px;
+		left: 50%;
+		margin-left: -12px;
+	}
+}
